@@ -1,0 +1,17 @@
+This is Part 1 of FinOptima graph.py. Only the top of the file. Lines 1 through 13. No LangGraph and no OpenAI yet.
+
+Line 1 is a comment. It tells a human the pipeline: engine, then RAG, then OpenAI, then you Approve. Python does not run the graph from this line.
+
+Line 3 imports future annotations. That only helps type hints later. Skip it in an interview unless they ask.
+
+Lines 5 to 8 are normal Python imports. sys lets us change where Python looks for packages. uuid is for a unique audit id later. Path finds folders. TypedDict is for the state form in Part 2.
+
+Line 10 is important. ROOT is the FINTRACK folder. This file lives at src/agents/graph.py. We go up two parents: agents, then src, then FINTRACK.
+
+Line 11 sets SRC to FINTRACK slash src.
+
+Lines 12 and 13 add src to Python's import path if it is not already there. That is why from audit.engine import works when Streamlit or python runs this file.
+
+Interview sentence for Part 1: this block does not search policies and does not call GPT. It only makes our engine, RAG, and database helpers importable.
+
+That is the end of Part 1.

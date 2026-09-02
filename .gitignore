@@ -1,0 +1,13 @@
+﻿__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.env.local
+*.db
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+data/chroma_db/
+data/*.sqlite
+.pytest_cache/
